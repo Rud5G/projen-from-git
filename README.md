@@ -7,14 +7,14 @@ A projen project that can be used directly from a git repository w/o publishing.
 Create your custom projen from git project with this simple command:
 
 ```console
-projen new --from @Rud5G/projen-from-git@Lionsville/projen-from-git
+projen new --from @Rud5G/projen-from-git@Rud5G/projen-from-git
 ```
 
 It is important to use the `<package-name>@<git-remote>` format, otherwise projen won't be able to correctly resolve the package.
 All protocols supported by npm are supported for `<git-remote>`, however limitations apply if you change the package manager (see below).
 
 For your production packages you likely want to append a `#<commit-ish>` at the end of `<git-remote>`.
-For example `Lionsville/projen-from-git#v0.0.0` would install the very first release of this package.
+For example `Rud5G/projen-from-git#v0.0.0` would install the very first release of this package.
 
 ## Configuration
 
@@ -50,8 +50,8 @@ Please refer to the documentation of your package manager for supported formats.
 When using `yarn` or `pnpm` the safest way is to use one of these two formats:
 
 ```console
-git+ssh://github.com/Lionsville/projen-from-git.git
-git+https://github.com/Lionsville/projen-from-git.git
+git+ssh://github.com/Rud5G/projen-from-git.git
+git+https://github.com/Rud5G/projen-from-git.git
 ```
 
 ### Authentication

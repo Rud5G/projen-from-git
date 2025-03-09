@@ -29,6 +29,7 @@ const project = new ProjenProjectFromGit({
     allowedUsernames: [
       'projen-builder[bot]', // Bot account for upgrade PRs
       'Rud5G', // Auto-approve PRs of main maintainer
+      'Lionsville',
     ],
   },
 
@@ -39,7 +40,7 @@ const project = new ProjenProjectFromGit({
 
   workflowBootstrapSteps: [{
     name: 'Update npm',
-    run: 'sudo npm i -g npm@8',
+    run: 'sudo npm i -g npm@latest',
   }],
 });
 

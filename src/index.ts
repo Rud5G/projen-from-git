@@ -1,5 +1,5 @@
 import { cdk, javascript } from 'projen';
-import { YarnNodeLinker } from "projen/lib/javascript";
+import { YarnNodeLinker } from 'projen/lib/javascript';
 
 export class ProjenProjectFromGit extends cdk.JsiiProject {
   public constructor(options: cdk.JsiiProjectOptions) {
@@ -9,18 +9,15 @@ export class ProjenProjectFromGit extends cdk.JsiiProject {
       yarnBerryOptions: {
         yarnRcOptions: {
           nodeLinker: YarnNodeLinker.NODE_MODULES,
-        }
+        },
       },
-
       peerDependencyOptions: {
         pinnedDevDependency: false,
       },
-
       publishToGo: undefined,
       publishToMaven: undefined,
       publishToNuget: undefined,
       publishToPypi: undefined,
-
       releaseToNpm: false,
       ...options,
       deps: [

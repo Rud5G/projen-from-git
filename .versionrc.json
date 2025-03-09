@@ -1,0 +1,22 @@
+{
+  "packageFiles": [
+    {
+      "filename": "/home/rudger/projen-dev/projen-from-git/package.json",
+      "type": "json"
+    }
+  ],
+  "bumpFiles": [
+    {
+      "filename": "/home/rudger/projen-dev/projen-from-git/package.json",
+      "type": "json"
+    }
+  ],
+  "commitAll": false,
+  "infile": "/home/rudger/projen-dev/projen-from-git/dist/changelog.md",
+  "header": "",
+  "skip": {
+    "commit": true,
+    "tag": true,
+    "bump": true
+  }
+}

@@ -31,7 +31,7 @@ However you might want to consider changing the peer dependency version constrai
 ### Changed defaults
 
 | Option                                      | New default |
-| ------------------------------------------- | ----------- |
+|---------------------------------------------|-------------|
 | `packageManager`                            | `"npm"`     |
 | `peerDependencyOptions.pinnedDevDependency` | `false`     |
 | `projenrcTs`                                | `true`      |
